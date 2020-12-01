@@ -32,23 +32,25 @@
             this.cardInfoLabel = new System.Windows.Forms.Label();
             this.menuContainer = new System.Windows.Forms.Panel();
             this.elsePanel = new System.Windows.Forms.FlowLayoutPanel();
-            this.blockButton = new System.Windows.Forms.Button();
+            this.returnButton = new System.Windows.Forms.Button();
             this.buttonActivatingCard = new System.Windows.Forms.Button();
             this.swapButton = new System.Windows.Forms.Button();
             this.transferButton = new System.Windows.Forms.Button();
-            this.ReturnCashForCardbutton = new System.Windows.Forms.Button();
-            this.returnButton = new System.Windows.Forms.Button();
-            this.addTicketButton = new System.Windows.Forms.Button();
             this.changeInfoClientButton = new System.Windows.Forms.Button();
+            this.printTransactionRepanishmantButton = new System.Windows.Forms.Button();
             this.printTransactionSpandingButton = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
-            this.printTransactionRepanishmantButton = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
             this.button13 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
             this.addBonusButton = new System.Windows.Forms.Button();
             this.button16 = new System.Windows.Forms.Button();
+            this.blockButton = new System.Windows.Forms.Button();
+            this.ReturnCashForCardbutton = new System.Windows.Forms.Button();
+            this.addTicketButton = new System.Windows.Forms.Button();
+            this.buttonAddDayBonus = new System.Windows.Forms.Button();
+            this.buttonRemoveDayBonus = new System.Windows.Forms.Button();
             this.packetsPanel = new System.Windows.Forms.FlowLayoutPanel();
             this.button2 = new System.Windows.Forms.Button();
             this.packetStandartButton = new System.Windows.Forms.Button();
@@ -99,8 +101,7 @@
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
             this.calcTextBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.buttonAddDayBonus = new System.Windows.Forms.Button();
-            this.buttonRemoveDayBonus = new System.Windows.Forms.Button();
+            this.button12 = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.menuContainer.SuspendLayout();
             this.elsePanel.SuspendLayout();
@@ -150,9 +151,9 @@
             this.menuContainer.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.menuContainer.Controls.Add(this.elsePanel);
             this.menuContainer.Controls.Add(this.packetsPanel);
             this.menuContainer.Controls.Add(this.prizePanel);
+            this.menuContainer.Controls.Add(this.elsePanel);
             this.menuContainer.Location = new System.Drawing.Point(660, 3);
             this.menuContainer.Name = "menuContainer";
             this.menuContainer.Size = new System.Drawing.Size(335, 479);
@@ -195,16 +196,16 @@
             this.elsePanel.Visible = false;
             this.elsePanel.Paint += new System.Windows.Forms.PaintEventHandler(this.elsePanel_Paint);
             // 
-            // blockButton
+            // returnButton
             // 
-            this.blockButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.blockButton.Location = new System.Drawing.Point(160, 863);
-            this.blockButton.Name = "blockButton";
-            this.blockButton.Size = new System.Drawing.Size(148, 94);
-            this.blockButton.TabIndex = 0;
-            this.blockButton.Text = "Блокировка";
-            this.blockButton.UseVisualStyleBackColor = true;
-            this.blockButton.Click += new System.EventHandler(this.blockButton_Click);
+            this.returnButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.returnButton.Location = new System.Drawing.Point(160, 3);
+            this.returnButton.Name = "returnButton";
+            this.returnButton.Size = new System.Drawing.Size(148, 98);
+            this.returnButton.TabIndex = 1;
+            this.returnButton.Text = "Возврат средств со счета карты";
+            this.returnButton.UseVisualStyleBackColor = true;
+            this.returnButton.Click += new System.EventHandler(this.returnButton_Click);
             // 
             // buttonActivatingCard
             // 
@@ -239,39 +240,6 @@
             this.transferButton.UseVisualStyleBackColor = true;
             this.transferButton.Click += new System.EventHandler(this.transferButton_Click);
             // 
-            // ReturnCashForCardbutton
-            // 
-            this.ReturnCashForCardbutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ReturnCashForCardbutton.Location = new System.Drawing.Point(6, 863);
-            this.ReturnCashForCardbutton.Name = "ReturnCashForCardbutton";
-            this.ReturnCashForCardbutton.Size = new System.Drawing.Size(148, 94);
-            this.ReturnCashForCardbutton.TabIndex = 9;
-            this.ReturnCashForCardbutton.Text = "Возврат стоимости карты";
-            this.ReturnCashForCardbutton.UseVisualStyleBackColor = true;
-            this.ReturnCashForCardbutton.Click += new System.EventHandler(this.ReturnCashForCardbutton_Click);
-            // 
-            // returnButton
-            // 
-            this.returnButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.returnButton.Location = new System.Drawing.Point(160, 3);
-            this.returnButton.Name = "returnButton";
-            this.returnButton.Size = new System.Drawing.Size(148, 98);
-            this.returnButton.TabIndex = 1;
-            this.returnButton.Text = "Возврат средств со счета карты";
-            this.returnButton.UseVisualStyleBackColor = true;
-            this.returnButton.Click += new System.EventHandler(this.returnButton_Click);
-            // 
-            // addTicketButton
-            // 
-            this.addTicketButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.addTicketButton.Location = new System.Drawing.Point(160, 963);
-            this.addTicketButton.Name = "addTicketButton";
-            this.addTicketButton.Size = new System.Drawing.Size(148, 95);
-            this.addTicketButton.TabIndex = 3;
-            this.addTicketButton.Text = "Регистрация билетов";
-            this.addTicketButton.UseVisualStyleBackColor = true;
-            this.addTicketButton.Click += new System.EventHandler(this.addTicketButton_Click);
-            // 
             // changeInfoClientButton
             // 
             this.changeInfoClientButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -282,6 +250,17 @@
             this.changeInfoClientButton.Text = "Изменить данные о клиенте";
             this.changeInfoClientButton.UseVisualStyleBackColor = true;
             this.changeInfoClientButton.Click += new System.EventHandler(this.changeInfoClientButton_Click);
+            // 
+            // printTransactionRepanishmantButton
+            // 
+            this.printTransactionRepanishmantButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.printTransactionRepanishmantButton.Location = new System.Drawing.Point(6, 315);
+            this.printTransactionRepanishmantButton.Name = "printTransactionRepanishmantButton";
+            this.printTransactionRepanishmantButton.Size = new System.Drawing.Size(302, 79);
+            this.printTransactionRepanishmantButton.TabIndex = 8;
+            this.printTransactionRepanishmantButton.Text = "Печать выписки изменений счета за день";
+            this.printTransactionRepanishmantButton.UseVisualStyleBackColor = true;
+            this.printTransactionRepanishmantButton.Click += new System.EventHandler(this.printTransactionRepanishmantButton_Click);
             // 
             // printTransactionSpandingButton
             // 
@@ -307,17 +286,6 @@
             this.button7.Text = "Изьять всю выручку из кассы";
             this.button7.UseVisualStyleBackColor = true;
             this.button7.Click += new System.EventHandler(this.button7_Click);
-            // 
-            // printTransactionRepanishmantButton
-            // 
-            this.printTransactionRepanishmantButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.printTransactionRepanishmantButton.Location = new System.Drawing.Point(6, 315);
-            this.printTransactionRepanishmantButton.Name = "printTransactionRepanishmantButton";
-            this.printTransactionRepanishmantButton.Size = new System.Drawing.Size(302, 79);
-            this.printTransactionRepanishmantButton.TabIndex = 8;
-            this.printTransactionRepanishmantButton.Text = "Печать выписки изменений счета за день";
-            this.printTransactionRepanishmantButton.UseVisualStyleBackColor = true;
-            this.printTransactionRepanishmantButton.Click += new System.EventHandler(this.printTransactionRepanishmantButton_Click);
             // 
             // button10
             // 
@@ -397,6 +365,61 @@
             this.button16.UseVisualStyleBackColor = true;
             this.button16.Click += new System.EventHandler(this.button16_Click);
             // 
+            // blockButton
+            // 
+            this.blockButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.blockButton.Location = new System.Drawing.Point(160, 863);
+            this.blockButton.Name = "blockButton";
+            this.blockButton.Size = new System.Drawing.Size(148, 94);
+            this.blockButton.TabIndex = 0;
+            this.blockButton.Text = "Блокировка";
+            this.blockButton.UseVisualStyleBackColor = true;
+            this.blockButton.Click += new System.EventHandler(this.blockButton_Click);
+            // 
+            // ReturnCashForCardbutton
+            // 
+            this.ReturnCashForCardbutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ReturnCashForCardbutton.Location = new System.Drawing.Point(6, 863);
+            this.ReturnCashForCardbutton.Name = "ReturnCashForCardbutton";
+            this.ReturnCashForCardbutton.Size = new System.Drawing.Size(148, 94);
+            this.ReturnCashForCardbutton.TabIndex = 9;
+            this.ReturnCashForCardbutton.Text = "Возврат стоимости карты";
+            this.ReturnCashForCardbutton.UseVisualStyleBackColor = true;
+            this.ReturnCashForCardbutton.Click += new System.EventHandler(this.ReturnCashForCardbutton_Click);
+            // 
+            // addTicketButton
+            // 
+            this.addTicketButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.addTicketButton.Location = new System.Drawing.Point(160, 963);
+            this.addTicketButton.Name = "addTicketButton";
+            this.addTicketButton.Size = new System.Drawing.Size(148, 95);
+            this.addTicketButton.TabIndex = 3;
+            this.addTicketButton.Text = "Регистрация билетов";
+            this.addTicketButton.UseVisualStyleBackColor = true;
+            this.addTicketButton.Click += new System.EventHandler(this.addTicketButton_Click);
+            // 
+            // buttonAddDayBonus
+            // 
+            this.buttonAddDayBonus.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonAddDayBonus.Location = new System.Drawing.Point(6, 963);
+            this.buttonAddDayBonus.Name = "buttonAddDayBonus";
+            this.buttonAddDayBonus.Size = new System.Drawing.Size(148, 95);
+            this.buttonAddDayBonus.TabIndex = 20;
+            this.buttonAddDayBonus.Text = "Добавить суточные бонусы";
+            this.buttonAddDayBonus.UseVisualStyleBackColor = true;
+            this.buttonAddDayBonus.Click += new System.EventHandler(this.buttonAddDayBonus_Click);
+            // 
+            // buttonRemoveDayBonus
+            // 
+            this.buttonRemoveDayBonus.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonRemoveDayBonus.Location = new System.Drawing.Point(160, 1064);
+            this.buttonRemoveDayBonus.Name = "buttonRemoveDayBonus";
+            this.buttonRemoveDayBonus.Size = new System.Drawing.Size(148, 105);
+            this.buttonRemoveDayBonus.TabIndex = 21;
+            this.buttonRemoveDayBonus.Text = "Снять суточные бонусы";
+            this.buttonRemoveDayBonus.UseVisualStyleBackColor = true;
+            this.buttonRemoveDayBonus.Click += new System.EventHandler(this.buttonRemoveDayBonus_Click);
+            // 
             // packetsPanel
             // 
             this.packetsPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -411,6 +434,7 @@
             this.packetsPanel.Controls.Add(this.packets10Button);
             this.packetsPanel.Controls.Add(this.buttonBDay);
             this.packetsPanel.Controls.Add(this.packets20Button);
+            this.packetsPanel.Controls.Add(this.button12);
             this.packetsPanel.Cursor = System.Windows.Forms.Cursors.Default;
             this.packetsPanel.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
             this.packetsPanel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -1170,27 +1194,16 @@
             this.label1.TabIndex = 3;
             this.label1.Text = "Введите  полученную сумму";
             // 
-            // buttonAddDayBonus
+            // button12
             // 
-            this.buttonAddDayBonus.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonAddDayBonus.Location = new System.Drawing.Point(6, 963);
-            this.buttonAddDayBonus.Name = "buttonAddDayBonus";
-            this.buttonAddDayBonus.Size = new System.Drawing.Size(148, 95);
-            this.buttonAddDayBonus.TabIndex = 20;
-            this.buttonAddDayBonus.Text = "Добавить суточные бонусы";
-            this.buttonAddDayBonus.UseVisualStyleBackColor = true;
-            this.buttonAddDayBonus.Click += new System.EventHandler(this.buttonAddDayBonus_Click);
-            // 
-            // buttonRemoveDayBonus
-            // 
-            this.buttonRemoveDayBonus.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonRemoveDayBonus.Location = new System.Drawing.Point(160, 1064);
-            this.buttonRemoveDayBonus.Name = "buttonRemoveDayBonus";
-            this.buttonRemoveDayBonus.Size = new System.Drawing.Size(148, 105);
-            this.buttonRemoveDayBonus.TabIndex = 21;
-            this.buttonRemoveDayBonus.Text = "Снять суточные бонусы";
-            this.buttonRemoveDayBonus.UseVisualStyleBackColor = true;
-            this.buttonRemoveDayBonus.Click += new System.EventHandler(this.buttonRemoveDayBonus_Click);
+            this.button12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button12.Location = new System.Drawing.Point(178, 343);
+            this.button12.Name = "button12";
+            this.button12.Size = new System.Drawing.Size(148, 79);
+            this.button12.TabIndex = 9;
+            this.button12.Text = "50% скидка";
+            this.button12.UseVisualStyleBackColor = true;
+            this.button12.Click += new System.EventHandler(this.button12_Click_1);
             // 
             // form
             // 
@@ -1303,6 +1316,7 @@
         private System.Windows.Forms.Button button16;
         private System.Windows.Forms.Button buttonAddDayBonus;
         private System.Windows.Forms.Button buttonRemoveDayBonus;
+        private System.Windows.Forms.Button button12;
     }
 }
 

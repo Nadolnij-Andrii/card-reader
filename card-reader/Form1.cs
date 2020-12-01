@@ -191,7 +191,7 @@ namespace card_reader
                                             {
                                                 //Регистрация карты
                                                 MatchCollection matches = Regex.Matches(cardInfo, @"([0-9])+");
-                                                var cardId = matches[1].ToString();
+                                                var cardId = matches[1].ToString(); 
                                                 currentCard = Card.register(cardInfo, loginCardInfo, ip, swap);
                                                 if (currentCard != null)
                                                 {
@@ -2874,6 +2874,28 @@ namespace card_reader
                 FormMessage formMessage = new FormMessage(exc.Message, "Касса");
                 formMessage.Show();
 
+            }
+        }
+
+        private void button12_Click_1(object sender, EventArgs e)
+        {
+            try
+            {
+                if (isMouse(e))
+                {
+                    currentCard.setPacket(cardInfo, 8, loginCardInfo, ip);
+                    cardInfoLabel.Text = currentCard.ToString(this.startInfo) + "\n" + "Суточный бонус:" + currentCard.cardDayBonus + "\n" + "Дата внесения сут. бонуса:" + currentCard.cardDayBonusDateTime + "\n" + "Всего внесенно:" + currentCard.TotalAccrued + "\n" + "Всего потраченно:" + currentCard.TotalSpend +
+                            "\n" + "Всего игр: " + currentCard.TotalGames +
+                            "\n" + "Телефон: " + currentCard.Telephone +
+                            "\n" + "Email: " + currentCard.Email;
+
+
+                }
+            }
+            catch (Exception exc)
+            {
+                FormMessage formMessage = new FormMessage(exc.Message, "Касса");
+                formMessage.Show();
             }
         }
     }
