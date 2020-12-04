@@ -141,15 +141,17 @@ namespace card_reader
         }
         private void form_KeyUp(object sender, KeyEventArgs e)
         {
-            if (isWorkShiftOpen)
+
+            try
             {
-                try
+                if ((DateTime.Now - date) < TimeSpan.FromMilliseconds(30))
                 {
-                    if ((DateTime.Now - date) < TimeSpan.FromMilliseconds(30))
+                    if (isWorkShiftOpen)    
                     {
                         if (e.KeyCode == Keys.Enter)
                         {
                             cardInfo = Encoding.ASCII.GetString(stk.get());
+                            //cardInfo = ";111=125002=3=17799731?";
                             currentCard = selectCard(cardInfo, loginCardInfo, ip);
                             //Если карта не зарегистрирована
                             if (currentCard != null && swap == true)
@@ -191,7 +193,7 @@ namespace card_reader
                                             {
                                                 //Регистрация карты
                                                 MatchCollection matches = Regex.Matches(cardInfo, @"([0-9])+");
-                                                var cardId = matches[1].ToString(); 
+                                                var cardId = matches[1].ToString();
                                                 currentCard = Card.register(cardInfo, loginCardInfo, ip, swap);
                                                 if (currentCard != null)
                                                 {
@@ -235,7 +237,7 @@ namespace card_reader
                                         {
                                             firstCardInfo = "";
                                             transfer = false;
-                                            cardInfoLabel.Text = currentCard.ToString(this.startInfo) + "\n" + "Суточный бонус:" + currentCard.cardDayBonus +"\n" + "Дата внесения сут. бонуса:" + currentCard.cardDayBonusDateTime + "\n" + "Всего внесенно:" + currentCard.TotalAccrued + "\n" + "Всего потраченно:" + currentCard.TotalSpend +
+                                            cardInfoLabel.Text = currentCard.ToString(this.startInfo) + "\n" + "Суточный бонус:" + currentCard.cardDayBonus + "\n" + "Дата внесения сут. бонуса:" + currentCard.cardDayBonusDateTime + "\n" + "Всего внесенно:" + currentCard.TotalAccrued + "\n" + "Всего потраченно:" + currentCard.TotalSpend +
                             "\n" + "Всего игр: " + currentCard.TotalGames +
                             "\n" + "Телефон: " + currentCard.Telephone +
                             "\n" + "Email: " + currentCard.Email;
@@ -256,7 +258,7 @@ namespace card_reader
                             }
                             if (currentCard != null)
                             {
-                                cardInfoLabel.Text = currentCard.ToString(this.startInfo) + "\n" + "Суточный бонус:" + currentCard.cardDayBonus +"\n" + "Дата внесения сут. бонуса:" + currentCard.cardDayBonusDateTime + "\n" + "Всего внесенно:" + currentCard.TotalAccrued + "\n" + "Всего потраченно:" + currentCard.TotalSpend +
+                                cardInfoLabel.Text = currentCard.ToString(this.startInfo) + "\n" + "Суточный бонус:" + currentCard.cardDayBonus + "\n" + "Дата внесения сут. бонуса:" + currentCard.cardDayBonusDateTime + "\n" + "Всего внесенно:" + currentCard.TotalAccrued + "\n" + "Всего потраченно:" + currentCard.TotalSpend +
                             "\n" + "Всего игр: " + currentCard.TotalGames +
                             "\n" + "Телефон: " + currentCard.Telephone +
                             "\n" + "Email: " + currentCard.Email;
@@ -267,17 +269,17 @@ namespace card_reader
                         stk.push((byte)e.KeyValue);
                     }
                 }
-                catch (Exception exc)
-                {
-                    transferCard = null;
-                    swapCard = null;
-                    transfer = false;
-                    swap = false;
-                    firstCardInfo = "";
-                    FormMessage formMessage4 = new FormMessage(exc.Message, "Касса");
-                    formMessage4.Show();
+            }
+            catch (Exception exc)
+            {
+                transferCard = null;
+                swapCard = null;
+                transfer = false;
+                swap = false;
+                firstCardInfo = "";
+                FormMessage formMessage4 = new FormMessage(exc.Message, "Касса");
+                formMessage4.Show();
 
-                }
             }
         }
         public void delegateMetod(string parentName)

@@ -808,7 +808,7 @@ namespace card_reader
                             string r = result.Remove(result.Length - 1);
                             var k = JsonConvert.DeserializeObject(result);
                             card = JsonConvert.DeserializeObject<Card>(k.ToString());
-                            this.cardBonus = card.cardBonus;
+                            this.cardDayBonus = card.cardDayBonus;
                         }
                     }
                 }

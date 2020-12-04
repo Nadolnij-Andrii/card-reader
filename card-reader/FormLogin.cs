@@ -47,7 +47,8 @@ namespace card_reader
                 {
                     if (e.KeyCode == Keys.Enter)
                     {
-
+                        //string inputInfo = ";111=125001=3=63115235?";
+                        //MatchCollection matches = Regex.Matches(inputInfo, @"([0-9])+");
                         MatchCollection matches = Regex.Matches(Encoding.ASCII.GetString(stk.get()), @"([0-9])+");
                         string inputInfo = Encoding.ASCII.GetString(stk.get());
                     if (matches.Count >= 3)

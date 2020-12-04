@@ -31,6 +31,25 @@
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.cardInfoLabel = new System.Windows.Forms.Label();
             this.menuContainer = new System.Windows.Forms.Panel();
+            this.packetsPanel = new System.Windows.Forms.FlowLayoutPanel();
+            this.button2 = new System.Windows.Forms.Button();
+            this.packetStandartButton = new System.Windows.Forms.Button();
+            this.packets5Button = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.packets15Button = new System.Windows.Forms.Button();
+            this.packets10Button = new System.Windows.Forms.Button();
+            this.buttonBDay = new System.Windows.Forms.Button();
+            this.packets20Button = new System.Windows.Forms.Button();
+            this.button12 = new System.Windows.Forms.Button();
+            this.prizePanel = new System.Windows.Forms.FlowLayoutPanel();
+            this.button8 = new System.Windows.Forms.Button();
+            this.prize10Button = new System.Windows.Forms.Button();
+            this.prize5Button = new System.Windows.Forms.Button();
+            this.prize50Button = new System.Windows.Forms.Button();
+            this.prize20Button = new System.Windows.Forms.Button();
+            this.prize200Button = new System.Windows.Forms.Button();
+            this.prize100Button = new System.Windows.Forms.Button();
+            this.prize500Button = new System.Windows.Forms.Button();
             this.elsePanel = new System.Windows.Forms.FlowLayoutPanel();
             this.returnButton = new System.Windows.Forms.Button();
             this.buttonActivatingCard = new System.Windows.Forms.Button();
@@ -51,24 +70,6 @@
             this.addTicketButton = new System.Windows.Forms.Button();
             this.buttonAddDayBonus = new System.Windows.Forms.Button();
             this.buttonRemoveDayBonus = new System.Windows.Forms.Button();
-            this.packetsPanel = new System.Windows.Forms.FlowLayoutPanel();
-            this.button2 = new System.Windows.Forms.Button();
-            this.packetStandartButton = new System.Windows.Forms.Button();
-            this.packets5Button = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.packets15Button = new System.Windows.Forms.Button();
-            this.packets10Button = new System.Windows.Forms.Button();
-            this.buttonBDay = new System.Windows.Forms.Button();
-            this.packets20Button = new System.Windows.Forms.Button();
-            this.prizePanel = new System.Windows.Forms.FlowLayoutPanel();
-            this.button8 = new System.Windows.Forms.Button();
-            this.prize10Button = new System.Windows.Forms.Button();
-            this.prize5Button = new System.Windows.Forms.Button();
-            this.prize50Button = new System.Windows.Forms.Button();
-            this.prize20Button = new System.Windows.Forms.Button();
-            this.prize200Button = new System.Windows.Forms.Button();
-            this.prize100Button = new System.Windows.Forms.Button();
-            this.prize500Button = new System.Windows.Forms.Button();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.button15 = new System.Windows.Forms.Button();
             this.replenishmentButton = new System.Windows.Forms.Button();
@@ -101,12 +102,11 @@
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
             this.calcTextBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.button12 = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.menuContainer.SuspendLayout();
-            this.elsePanel.SuspendLayout();
             this.packetsPanel.SuspendLayout();
             this.prizePanel.SuspendLayout();
+            this.elsePanel.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
@@ -151,13 +151,258 @@
             this.menuContainer.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.menuContainer.Controls.Add(this.elsePanel);
             this.menuContainer.Controls.Add(this.packetsPanel);
             this.menuContainer.Controls.Add(this.prizePanel);
-            this.menuContainer.Controls.Add(this.elsePanel);
             this.menuContainer.Location = new System.Drawing.Point(660, 3);
             this.menuContainer.Name = "menuContainer";
             this.menuContainer.Size = new System.Drawing.Size(335, 479);
             this.menuContainer.TabIndex = 2;
+            // 
+            // packetsPanel
+            // 
+            this.packetsPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.packetsPanel.AutoScroll = true;
+            this.packetsPanel.Controls.Add(this.button2);
+            this.packetsPanel.Controls.Add(this.packetStandartButton);
+            this.packetsPanel.Controls.Add(this.packets5Button);
+            this.packetsPanel.Controls.Add(this.button1);
+            this.packetsPanel.Controls.Add(this.packets15Button);
+            this.packetsPanel.Controls.Add(this.packets10Button);
+            this.packetsPanel.Controls.Add(this.buttonBDay);
+            this.packetsPanel.Controls.Add(this.packets20Button);
+            this.packetsPanel.Controls.Add(this.button12);
+            this.packetsPanel.Cursor = System.Windows.Forms.Cursors.Default;
+            this.packetsPanel.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
+            this.packetsPanel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.packetsPanel.Location = new System.Drawing.Point(3, 0);
+            this.packetsPanel.Name = "packetsPanel";
+            this.packetsPanel.Size = new System.Drawing.Size(329, 476);
+            this.packetsPanel.TabIndex = 3;
+            this.packetsPanel.Visible = false;
+            this.packetsPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.packetsPanel_Paint);
+            // 
+            // button2
+            // 
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button2.Location = new System.Drawing.Point(178, 3);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(148, 79);
+            this.button2.TabIndex = 7;
+            this.button2.Text = "2% скидка";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.packets2Button_Click);
+            // 
+            // packetStandartButton
+            // 
+            this.packetStandartButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.packetStandartButton.Location = new System.Drawing.Point(24, 3);
+            this.packetStandartButton.Name = "packetStandartButton";
+            this.packetStandartButton.Size = new System.Drawing.Size(148, 79);
+            this.packetStandartButton.TabIndex = 5;
+            this.packetStandartButton.Text = "Начальный";
+            this.packetStandartButton.UseVisualStyleBackColor = true;
+            this.packetStandartButton.Click += new System.EventHandler(this.packetStandartButton_Click);
+            // 
+            // packets5Button
+            // 
+            this.packets5Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.packets5Button.Location = new System.Drawing.Point(178, 88);
+            this.packets5Button.Name = "packets5Button";
+            this.packets5Button.Size = new System.Drawing.Size(148, 79);
+            this.packets5Button.TabIndex = 0;
+            this.packets5Button.Text = "7% скидка";
+            this.packets5Button.UseVisualStyleBackColor = true;
+            this.packets5Button.Click += new System.EventHandler(this.packets7Button_Click);
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button1.Location = new System.Drawing.Point(24, 88);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(148, 79);
+            this.button1.TabIndex = 6;
+            this.button1.Text = "5% скидка";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.packets5Button_Click);
+            // 
+            // packets15Button
+            // 
+            this.packets15Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.packets15Button.Location = new System.Drawing.Point(178, 173);
+            this.packets15Button.Name = "packets15Button";
+            this.packets15Button.Size = new System.Drawing.Size(148, 79);
+            this.packets15Button.TabIndex = 2;
+            this.packets15Button.Text = "15% скидка";
+            this.packets15Button.UseVisualStyleBackColor = true;
+            this.packets15Button.Click += new System.EventHandler(this.packets15Button_Click);
+            // 
+            // packets10Button
+            // 
+            this.packets10Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.packets10Button.Location = new System.Drawing.Point(24, 173);
+            this.packets10Button.Name = "packets10Button";
+            this.packets10Button.Size = new System.Drawing.Size(148, 79);
+            this.packets10Button.TabIndex = 1;
+            this.packets10Button.Text = "10% скидка";
+            this.packets10Button.UseVisualStyleBackColor = true;
+            this.packets10Button.Click += new System.EventHandler(this.packets10Button_Click);
+            // 
+            // buttonBDay
+            // 
+            this.buttonBDay.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonBDay.Location = new System.Drawing.Point(178, 258);
+            this.buttonBDay.Name = "buttonBDay";
+            this.buttonBDay.Size = new System.Drawing.Size(148, 79);
+            this.buttonBDay.TabIndex = 8;
+            this.buttonBDay.Text = "День рождения";
+            this.buttonBDay.UseVisualStyleBackColor = true;
+            this.buttonBDay.Click += new System.EventHandler(this.buttonBDay_Click);
+            // 
+            // packets20Button
+            // 
+            this.packets20Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.packets20Button.Location = new System.Drawing.Point(24, 258);
+            this.packets20Button.Name = "packets20Button";
+            this.packets20Button.Size = new System.Drawing.Size(148, 79);
+            this.packets20Button.TabIndex = 3;
+            this.packets20Button.Text = "20% скидка";
+            this.packets20Button.UseVisualStyleBackColor = true;
+            this.packets20Button.Click += new System.EventHandler(this.packets20Button_Click);
+            // 
+            // button12
+            // 
+            this.button12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button12.Location = new System.Drawing.Point(178, 343);
+            this.button12.Name = "button12";
+            this.button12.Size = new System.Drawing.Size(148, 79);
+            this.button12.TabIndex = 9;
+            this.button12.Text = "50% скидка";
+            this.button12.UseVisualStyleBackColor = true;
+            this.button12.Click += new System.EventHandler(this.button12_Click_1);
+            // 
+            // prizePanel
+            // 
+            this.prizePanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.prizePanel.AutoScroll = true;
+            this.prizePanel.Controls.Add(this.button8);
+            this.prizePanel.Controls.Add(this.prize10Button);
+            this.prizePanel.Controls.Add(this.prize5Button);
+            this.prizePanel.Controls.Add(this.prize50Button);
+            this.prizePanel.Controls.Add(this.prize20Button);
+            this.prizePanel.Controls.Add(this.prize200Button);
+            this.prizePanel.Controls.Add(this.prize100Button);
+            this.prizePanel.Controls.Add(this.prize500Button);
+            this.prizePanel.Cursor = System.Windows.Forms.Cursors.Default;
+            this.prizePanel.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
+            this.prizePanel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.prizePanel.Location = new System.Drawing.Point(0, 0);
+            this.prizePanel.Name = "prizePanel";
+            this.prizePanel.Size = new System.Drawing.Size(332, 479);
+            this.prizePanel.TabIndex = 5;
+            this.prizePanel.Visible = false;
+            // 
+            // button8
+            // 
+            this.button8.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.button8.Cursor = System.Windows.Forms.Cursors.Default;
+            this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button8.Location = new System.Drawing.Point(27, 3);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(302, 79);
+            this.button8.TabIndex = 17;
+            this.button8.Text = "Списание билетов по введеному количеству";
+            this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
+            // 
+            // prize10Button
+            // 
+            this.prize10Button.Cursor = System.Windows.Forms.Cursors.Default;
+            this.prize10Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.prize10Button.Location = new System.Drawing.Point(181, 88);
+            this.prize10Button.Name = "prize10Button";
+            this.prize10Button.Size = new System.Drawing.Size(148, 79);
+            this.prize10Button.TabIndex = 1;
+            this.prize10Button.Text = "Погашение 10 билетов";
+            this.prize10Button.UseVisualStyleBackColor = true;
+            this.prize10Button.Click += new System.EventHandler(this.prize10Button_Click);
+            // 
+            // prize5Button
+            // 
+            this.prize5Button.Cursor = System.Windows.Forms.Cursors.Default;
+            this.prize5Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.prize5Button.Location = new System.Drawing.Point(27, 88);
+            this.prize5Button.Name = "prize5Button";
+            this.prize5Button.Size = new System.Drawing.Size(148, 79);
+            this.prize5Button.TabIndex = 0;
+            this.prize5Button.Text = "Погашение 5 билетов";
+            this.prize5Button.UseVisualStyleBackColor = true;
+            this.prize5Button.Click += new System.EventHandler(this.prize5Button_Click);
+            // 
+            // prize50Button
+            // 
+            this.prize50Button.Cursor = System.Windows.Forms.Cursors.Default;
+            this.prize50Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.prize50Button.Location = new System.Drawing.Point(181, 173);
+            this.prize50Button.Name = "prize50Button";
+            this.prize50Button.Size = new System.Drawing.Size(148, 79);
+            this.prize50Button.TabIndex = 3;
+            this.prize50Button.Text = "Погашение 50 билетов";
+            this.prize50Button.UseVisualStyleBackColor = true;
+            this.prize50Button.Click += new System.EventHandler(this.prize50Button_Click);
+            // 
+            // prize20Button
+            // 
+            this.prize20Button.Cursor = System.Windows.Forms.Cursors.Default;
+            this.prize20Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.prize20Button.Location = new System.Drawing.Point(27, 173);
+            this.prize20Button.Name = "prize20Button";
+            this.prize20Button.Size = new System.Drawing.Size(148, 79);
+            this.prize20Button.TabIndex = 2;
+            this.prize20Button.Text = "Погашение 20 билетов";
+            this.prize20Button.UseVisualStyleBackColor = true;
+            this.prize20Button.Click += new System.EventHandler(this.prize20Button_Click);
+            // 
+            // prize200Button
+            // 
+            this.prize200Button.Cursor = System.Windows.Forms.Cursors.Default;
+            this.prize200Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.prize200Button.Location = new System.Drawing.Point(181, 258);
+            this.prize200Button.Name = "prize200Button";
+            this.prize200Button.Size = new System.Drawing.Size(148, 79);
+            this.prize200Button.TabIndex = 5;
+            this.prize200Button.Text = "Погашение 200 билетов";
+            this.prize200Button.UseVisualStyleBackColor = true;
+            this.prize200Button.Click += new System.EventHandler(this.prize200Button_Click);
+            // 
+            // prize100Button
+            // 
+            this.prize100Button.Cursor = System.Windows.Forms.Cursors.Default;
+            this.prize100Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.prize100Button.Location = new System.Drawing.Point(27, 258);
+            this.prize100Button.Name = "prize100Button";
+            this.prize100Button.Size = new System.Drawing.Size(148, 79);
+            this.prize100Button.TabIndex = 4;
+            this.prize100Button.Text = "Погашение 100 билетов";
+            this.prize100Button.UseVisualStyleBackColor = true;
+            this.prize100Button.Click += new System.EventHandler(this.prize100Button_Click);
+            // 
+            // prize500Button
+            // 
+            this.prize500Button.Cursor = System.Windows.Forms.Cursors.Default;
+            this.prize500Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.prize500Button.Location = new System.Drawing.Point(181, 343);
+            this.prize500Button.Name = "prize500Button";
+            this.prize500Button.Size = new System.Drawing.Size(148, 79);
+            this.prize500Button.TabIndex = 6;
+            this.prize500Button.Text = "Погашение 500 билетов";
+            this.prize500Button.UseVisualStyleBackColor = true;
+            this.prize500Button.Click += new System.EventHandler(this.prize500Button_Click);
             // 
             // elsePanel
             // 
@@ -419,240 +664,6 @@
             this.buttonRemoveDayBonus.Text = "Снять суточные бонусы";
             this.buttonRemoveDayBonus.UseVisualStyleBackColor = true;
             this.buttonRemoveDayBonus.Click += new System.EventHandler(this.buttonRemoveDayBonus_Click);
-            // 
-            // packetsPanel
-            // 
-            this.packetsPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.packetsPanel.AutoScroll = true;
-            this.packetsPanel.Controls.Add(this.button2);
-            this.packetsPanel.Controls.Add(this.packetStandartButton);
-            this.packetsPanel.Controls.Add(this.packets5Button);
-            this.packetsPanel.Controls.Add(this.button1);
-            this.packetsPanel.Controls.Add(this.packets15Button);
-            this.packetsPanel.Controls.Add(this.packets10Button);
-            this.packetsPanel.Controls.Add(this.buttonBDay);
-            this.packetsPanel.Controls.Add(this.packets20Button);
-            this.packetsPanel.Controls.Add(this.button12);
-            this.packetsPanel.Cursor = System.Windows.Forms.Cursors.Default;
-            this.packetsPanel.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
-            this.packetsPanel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.packetsPanel.Location = new System.Drawing.Point(3, 0);
-            this.packetsPanel.Name = "packetsPanel";
-            this.packetsPanel.Size = new System.Drawing.Size(329, 476);
-            this.packetsPanel.TabIndex = 3;
-            this.packetsPanel.Visible = false;
-            this.packetsPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.packetsPanel_Paint);
-            // 
-            // button2
-            // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button2.Location = new System.Drawing.Point(178, 3);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(148, 79);
-            this.button2.TabIndex = 7;
-            this.button2.Text = "2% скидка";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.packets2Button_Click);
-            // 
-            // packetStandartButton
-            // 
-            this.packetStandartButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.packetStandartButton.Location = new System.Drawing.Point(24, 3);
-            this.packetStandartButton.Name = "packetStandartButton";
-            this.packetStandartButton.Size = new System.Drawing.Size(148, 79);
-            this.packetStandartButton.TabIndex = 5;
-            this.packetStandartButton.Text = "Начальный";
-            this.packetStandartButton.UseVisualStyleBackColor = true;
-            this.packetStandartButton.Click += new System.EventHandler(this.packetStandartButton_Click);
-            // 
-            // packets5Button
-            // 
-            this.packets5Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.packets5Button.Location = new System.Drawing.Point(178, 88);
-            this.packets5Button.Name = "packets5Button";
-            this.packets5Button.Size = new System.Drawing.Size(148, 79);
-            this.packets5Button.TabIndex = 0;
-            this.packets5Button.Text = "7% скидка";
-            this.packets5Button.UseVisualStyleBackColor = true;
-            this.packets5Button.Click += new System.EventHandler(this.packets7Button_Click);
-            // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button1.Location = new System.Drawing.Point(24, 88);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(148, 79);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "5% скидка";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.packets5Button_Click);
-            // 
-            // packets15Button
-            // 
-            this.packets15Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.packets15Button.Location = new System.Drawing.Point(178, 173);
-            this.packets15Button.Name = "packets15Button";
-            this.packets15Button.Size = new System.Drawing.Size(148, 79);
-            this.packets15Button.TabIndex = 2;
-            this.packets15Button.Text = "15% скидка";
-            this.packets15Button.UseVisualStyleBackColor = true;
-            this.packets15Button.Click += new System.EventHandler(this.packets15Button_Click);
-            // 
-            // packets10Button
-            // 
-            this.packets10Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.packets10Button.Location = new System.Drawing.Point(24, 173);
-            this.packets10Button.Name = "packets10Button";
-            this.packets10Button.Size = new System.Drawing.Size(148, 79);
-            this.packets10Button.TabIndex = 1;
-            this.packets10Button.Text = "10% скидка";
-            this.packets10Button.UseVisualStyleBackColor = true;
-            this.packets10Button.Click += new System.EventHandler(this.packets10Button_Click);
-            // 
-            // buttonBDay
-            // 
-            this.buttonBDay.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonBDay.Location = new System.Drawing.Point(178, 258);
-            this.buttonBDay.Name = "buttonBDay";
-            this.buttonBDay.Size = new System.Drawing.Size(148, 79);
-            this.buttonBDay.TabIndex = 8;
-            this.buttonBDay.Text = "День рождения";
-            this.buttonBDay.UseVisualStyleBackColor = true;
-            this.buttonBDay.Click += new System.EventHandler(this.buttonBDay_Click);
-            // 
-            // packets20Button
-            // 
-            this.packets20Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.packets20Button.Location = new System.Drawing.Point(24, 258);
-            this.packets20Button.Name = "packets20Button";
-            this.packets20Button.Size = new System.Drawing.Size(148, 79);
-            this.packets20Button.TabIndex = 3;
-            this.packets20Button.Text = "20% скидка";
-            this.packets20Button.UseVisualStyleBackColor = true;
-            this.packets20Button.Click += new System.EventHandler(this.packets20Button_Click);
-            // 
-            // prizePanel
-            // 
-            this.prizePanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.prizePanel.AutoScroll = true;
-            this.prizePanel.Controls.Add(this.button8);
-            this.prizePanel.Controls.Add(this.prize10Button);
-            this.prizePanel.Controls.Add(this.prize5Button);
-            this.prizePanel.Controls.Add(this.prize50Button);
-            this.prizePanel.Controls.Add(this.prize20Button);
-            this.prizePanel.Controls.Add(this.prize200Button);
-            this.prizePanel.Controls.Add(this.prize100Button);
-            this.prizePanel.Controls.Add(this.prize500Button);
-            this.prizePanel.Cursor = System.Windows.Forms.Cursors.Default;
-            this.prizePanel.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
-            this.prizePanel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.prizePanel.Location = new System.Drawing.Point(0, 0);
-            this.prizePanel.Name = "prizePanel";
-            this.prizePanel.Size = new System.Drawing.Size(332, 479);
-            this.prizePanel.TabIndex = 5;
-            this.prizePanel.Visible = false;
-            // 
-            // button8
-            // 
-            this.button8.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.button8.Cursor = System.Windows.Forms.Cursors.Default;
-            this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button8.Location = new System.Drawing.Point(27, 3);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(302, 79);
-            this.button8.TabIndex = 17;
-            this.button8.Text = "Списание билетов по введеному количеству";
-            this.button8.UseVisualStyleBackColor = true;
-            this.button8.Click += new System.EventHandler(this.button8_Click);
-            // 
-            // prize10Button
-            // 
-            this.prize10Button.Cursor = System.Windows.Forms.Cursors.Default;
-            this.prize10Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.prize10Button.Location = new System.Drawing.Point(181, 88);
-            this.prize10Button.Name = "prize10Button";
-            this.prize10Button.Size = new System.Drawing.Size(148, 79);
-            this.prize10Button.TabIndex = 1;
-            this.prize10Button.Text = "Погашение 10 билетов";
-            this.prize10Button.UseVisualStyleBackColor = true;
-            this.prize10Button.Click += new System.EventHandler(this.prize10Button_Click);
-            // 
-            // prize5Button
-            // 
-            this.prize5Button.Cursor = System.Windows.Forms.Cursors.Default;
-            this.prize5Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.prize5Button.Location = new System.Drawing.Point(27, 88);
-            this.prize5Button.Name = "prize5Button";
-            this.prize5Button.Size = new System.Drawing.Size(148, 79);
-            this.prize5Button.TabIndex = 0;
-            this.prize5Button.Text = "Погашение 5 билетов";
-            this.prize5Button.UseVisualStyleBackColor = true;
-            this.prize5Button.Click += new System.EventHandler(this.prize5Button_Click);
-            // 
-            // prize50Button
-            // 
-            this.prize50Button.Cursor = System.Windows.Forms.Cursors.Default;
-            this.prize50Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.prize50Button.Location = new System.Drawing.Point(181, 173);
-            this.prize50Button.Name = "prize50Button";
-            this.prize50Button.Size = new System.Drawing.Size(148, 79);
-            this.prize50Button.TabIndex = 3;
-            this.prize50Button.Text = "Погашение 50 билетов";
-            this.prize50Button.UseVisualStyleBackColor = true;
-            this.prize50Button.Click += new System.EventHandler(this.prize50Button_Click);
-            // 
-            // prize20Button
-            // 
-            this.prize20Button.Cursor = System.Windows.Forms.Cursors.Default;
-            this.prize20Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.prize20Button.Location = new System.Drawing.Point(27, 173);
-            this.prize20Button.Name = "prize20Button";
-            this.prize20Button.Size = new System.Drawing.Size(148, 79);
-            this.prize20Button.TabIndex = 2;
-            this.prize20Button.Text = "Погашение 20 билетов";
-            this.prize20Button.UseVisualStyleBackColor = true;
-            this.prize20Button.Click += new System.EventHandler(this.prize20Button_Click);
-            // 
-            // prize200Button
-            // 
-            this.prize200Button.Cursor = System.Windows.Forms.Cursors.Default;
-            this.prize200Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.prize200Button.Location = new System.Drawing.Point(181, 258);
-            this.prize200Button.Name = "prize200Button";
-            this.prize200Button.Size = new System.Drawing.Size(148, 79);
-            this.prize200Button.TabIndex = 5;
-            this.prize200Button.Text = "Погашение 200 билетов";
-            this.prize200Button.UseVisualStyleBackColor = true;
-            this.prize200Button.Click += new System.EventHandler(this.prize200Button_Click);
-            // 
-            // prize100Button
-            // 
-            this.prize100Button.Cursor = System.Windows.Forms.Cursors.Default;
-            this.prize100Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.prize100Button.Location = new System.Drawing.Point(27, 258);
-            this.prize100Button.Name = "prize100Button";
-            this.prize100Button.Size = new System.Drawing.Size(148, 79);
-            this.prize100Button.TabIndex = 4;
-            this.prize100Button.Text = "Погашение 100 билетов";
-            this.prize100Button.UseVisualStyleBackColor = true;
-            this.prize100Button.Click += new System.EventHandler(this.prize100Button_Click);
-            // 
-            // prize500Button
-            // 
-            this.prize500Button.Cursor = System.Windows.Forms.Cursors.Default;
-            this.prize500Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.prize500Button.Location = new System.Drawing.Point(181, 343);
-            this.prize500Button.Name = "prize500Button";
-            this.prize500Button.Size = new System.Drawing.Size(148, 79);
-            this.prize500Button.TabIndex = 6;
-            this.prize500Button.Text = "Погашение 500 билетов";
-            this.prize500Button.UseVisualStyleBackColor = true;
-            this.prize500Button.Click += new System.EventHandler(this.prize500Button_Click);
             // 
             // tableLayoutPanel2
             // 
@@ -1194,17 +1205,6 @@
             this.label1.TabIndex = 3;
             this.label1.Text = "Введите  полученную сумму";
             // 
-            // button12
-            // 
-            this.button12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button12.Location = new System.Drawing.Point(178, 343);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(148, 79);
-            this.button12.TabIndex = 9;
-            this.button12.Text = "50% скидка";
-            this.button12.UseVisualStyleBackColor = true;
-            this.button12.Click += new System.EventHandler(this.button12_Click_1);
-            // 
             // form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -1227,9 +1227,9 @@
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.menuContainer.ResumeLayout(false);
-            this.elsePanel.ResumeLayout(false);
             this.packetsPanel.ResumeLayout(false);
             this.prizePanel.ResumeLayout(false);
+            this.elsePanel.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
             this.tableLayoutPanel3.ResumeLayout(false);
